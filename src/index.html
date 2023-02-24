@@ -103,7 +103,24 @@
   <section class="bg-zinc-900">
     <div class="max-w-screen-xl px-4 py-16 mx-auto lg:py-24 lg:px-6">
       <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-        <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/tkg_split_samples.png" loading="lazy" alt="mindmap samples showing the categories and summaries">
+        <div class="sm:text-lg mb-4 lg:flex">
+          <!-- EXAMPLE -->
+          <a href="https://youtu.be/2xM3PjaOTNE" target="_blank" class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-l text-sm italic tracking-tight text-gray-500">(Summary Example)</h5>
+                <h5 class="mb-2 text-l font-bold tracking-tight text-gray-200">What every software architect must know</h5>
+                <p class="mb-3 font-normal text-base text-gray-400">Are you aspiring to become a software architect or work at that level?</p>
+                <ol class="mb-3 font-normal text-sm text-gray-400 space-y-3 list-decimal list-inside">
+                  <li>Learn your Enterprise Integration Patterns [...]</li>
+                  <li>You can't avoid the cloud! Familiarize yourself with the services offered by providers and, more importantly, learn how to use them effectively [...]</li>
+                  <li>You need to be able to think in systems [...]</li>
+                  <li>[...] Refine your communication techniques and learn how to manage through influence, not authority</li>
+                  <li>Your work now extends beyond a small team and can have a far-reaching impact on entire organisations [...]</li>
+                </ol>
+            </div>
+            <iframe class="object-cover w-full min-h-full rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://www.youtube.com/embed/2xM3PjaOTNE" height="600" title="What every software architect must know! #softwareengineering #coding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </a>
+        </div>
         <div class="sm:text-lg text-zinc-300">
             <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white">Videos categorized by areas of growth!</h2>
             <p class="mb-8 font-light lg:text-xl">As software engineers, we have to develop way more skills beyond the technical. This graph will help you see the different areas you need to work on throughout your career.</p>
@@ -188,13 +205,13 @@
         </div>
         <h2 id="accordion-flush-heading-2">
           <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-            <span class="text-gray-300">How am I supposed to use this mindmap?</span>
+            <span class="text-gray-300 text-lg">How am I supposed to use this mindmap?</span>
             <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </button>
         </h2>
         <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
           <div class="px-3 py-5 font-light border-b border-gray-700">
-            <p class="mb-2 font-normal text-gray-300">When you make a purchase, you will receive 2 links: one for the online version of the mindmap (accessible from any browser / device) and one for the editable xmind file. Here are some ideas for how you can use them:</p>
+            <p class="mb-2 font-normal text-gray-300 text-lg">When you make a purchase, you will receive 2 links: one for the online version of the mindmap (accessible from any browser / device) and one for the editable xmind file. Here are some ideas for how you can use them:</p>
             <ul class="list-disc list-inside text-gray-300 font-normal">
               <li>Bookmark the web version & pick a short video to watch whenever you have some free time!</li>
               <li>Make a list of the topics you'd like to develop in & build a study plan</li>
@@ -212,7 +229,29 @@
         <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
           <div class="px-3 py-5 font-light border-b border-gray-700">
             <p class="mb-2 font-normal text-gray-300">I'm true to my goal and my priority is to provide as many people access as possible. I'm willing to offer up to 80% discount for folks who cannot afford it and students.</p>
-            <p class="mb-2 font-normal text-gray-300">Email me at <span class="font-mono">contact [at] interop [dot] link</span> and we'll make sure you get the access you need!</p>
+            <p class="mb-2 font-normal text-gray-300">Email me at <span class="font-mono bg-slate-600">contact [at] interop [dot] link</span> and we'll make sure you get the access you need!</p>
+          </div>
+        </div>
+        <h2 id="accordion-flush-heading-4">
+          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
+            <span class="text-gray-300 text-lg">I found a mistake in your content!</span>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+          <div class="px-3 py-5 font-light border-b border-gray-700">
+            <p class="mb-2 font-normal text-gray-300">Oops.. I apologise in advance for that, please email me at <span class="font-mono bg-slate-600">contact [at] interop [dot] link</span> and you'll have my undenying gratitude 😄</p>
+          </div>
+        </div>
+        <h2 id="accordion-flush-heading-5">
+          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-5" aria-expanded="true" aria-controls="accordion-flush-body-5">
+            <span class="text-gray-300 text-lg">I want to put in a large order, how can I do that?</span>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+          <div class="px-3 py-5 font-light border-b border-gray-700">
+            <p class="mb-2 font-normal text-gray-300">Sounds wonderful! Reach out to me via <span class="font-mono bg-slate-600">letsworktogether [at] interop [dot] link</span> and I'll be more than happy to help you out!</p>
           </div>
         </div>
       </div>
