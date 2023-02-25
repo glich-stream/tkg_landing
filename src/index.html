@@ -38,7 +38,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   <!-- GDPR compliant, tracking free analytics -->
-  <script defer data-domain="glich.stream" src="https://plausible.io/js/script.js"></script>
+  <script defer data-domain="glich.stream" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
 <body class="bg-zinc-900">
   
@@ -63,10 +63,10 @@
               Tap into <span class="font-bold">the wisdom</span> of leading software engineering practitioners & learn their <span class="font-bold">mental models</span> as well as <span class="font-bold">industry best practices.</span>
             </p>
             <div class="flex flex-row">
-              <a href="https://glich.stream/tkg_sample" target="_blank" class="inline-flex items-center mr-5 focus:ring-4 text-zinc-200 hover:text-white border border-zinc-200 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:border-blue-800 dark:text-zinc-200 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
+              <a href="https://glich.stream/tkg_sample" target="_blank" class="inline-flex items-center mr-5 focus:ring-4 text-zinc-200 hover:text-white border border-zinc-200 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:border-blue-800 dark:text-zinc-200 dark:hover:bg-blue-800 dark:focus:ring-blue-800 plausible-event-name=Demo">
                 Demo
               </a>
-              <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="inline-flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="inline-flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 plausible-event-name=Buy+Now+(top)">
                 <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
                 Buy now
               </button>
@@ -107,7 +107,7 @@
       <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
         <div class="sm:text-lg mb-4 lg:flex">
           <!-- EXAMPLE -->
-          <a href="https://youtu.be/2xM3PjaOTNE" target="_blank" class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
+          <a href="https://youtu.be/2xM3PjaOTNE" target="_blank" class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700 plausible-event-name=Summary+Demo">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-l text-sm italic tracking-tight text-gray-500">(Summary Example)</h5>
                 <h5 class="mb-2 text-l font-bold tracking-tight text-gray-200">What every software architect must know</h5>
@@ -182,7 +182,7 @@
         <div class="max-w-screen-sm mx-auto text-center">
             <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-white">Grab yourself a copy or gift it to someone!</h2>
             <p class="mb-6 font-medium text-gray-400 md:text-lg">The lite version is available for free <a class="underline" href="https://glich.stream/tkg_sample">here</a></p>
-            <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-5 mb-5">
+            <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-5 mb-5 plausible-event-name=Buy+Now+(bottom)">
               Buy now
             </button>
         </div>
