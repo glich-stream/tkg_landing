@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- HTML Meta Tags -->
   <title>The Knowledge Graph (2023)</title>
-  <meta name="description" content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
+  <meta name="description"
+    content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
   <meta name="google-site-verification" content="OSr07Pxc-O2Wo4qK6MjuiPDX6YlUARoeIUj2TMxvV5o" />
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://glich.stream/tkg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Knowledge Graph (2023)">
-  <meta property="og:description" content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
+  <meta property="og:description"
+    content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
   <meta property="og:image" content="https://glich.stream/tkg/images/thumbnail_1280x720.png">
 
   <!-- Twitter Meta Tags -->
@@ -21,7 +24,8 @@
   <meta property="twitter:domain" content="glich.stream">
   <meta property="twitter:url" content="https://glich.stream/tkg">
   <meta name="twitter:title" content="The Knowledge Graph (2023)">
-  <meta name="twitter:description" content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
+  <meta name="twitter:description"
+    content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
   <meta name="twitter:image" content="https://glich.stream/tkg/images/thumbnail_1280x720.png">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
@@ -40,63 +44,110 @@
   <!-- GDPR compliant, tracking free analytics -->
   <script defer data-domain="glich.stream" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
+
 <body class="bg-zinc-900">
-  
-  <div id="discount_alert_box" class="flex p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
-    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-    <span class="sr-only">Info</span>
-    <div class="ml-3 text-sm font-medium">
-      Use the code: <span class="font-mono font-bold text-blue-700">KNOWL3DGEUSD</span> on checkout for a 30% discount and <span class="font-mono font-bold text-blue-700">KNOWL3DGEEUR</span> if you're paying in EURO.
+
+  <div id="sticky-banner" tabindex="-1"
+    class="fixed top-0 left-0 z-50 flex justify-between w-full p-4 border-b border-gray-600 bg-gray-700">
+    <div class="flex items-center mx-auto">
+      <p class="flex items-center text-sm font-normal text-gray-400">
+        <span class="inline-flex p-1 mr-3 rounded-full bg-gray-200">
+          <svg class="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path
+              d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z">
+            </path>
+          </svg>
+          <span class="sr-only">Light bulb</span>
+        </span>
+        <span class="text-gray-200">Use the code: <span class="font-mono font-bold text-blue-200">KNOWL3DGEUSD</span> on
+          checkout for a 30% discount and <span class="font-mono font-bold text-blue-200">KNOWL3DGEEUR</span> if you're
+          paying in EURO.</span>
+      </p>
     </div>
-    <!-- <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">
-      <span class="sr-only">Close</span>
-      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-    </button> -->
+    <div class="flex items-center">
+      <button data-dismiss-target="#sticky-banner" type="button"
+        class="flex-shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <span class="sr-only">Close banner</span>
+      </button>
+    </div>
   </div>
 
   <!-- HEADER -->
   <section class="bg-zinc-900">
     <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
-        <div class="mr-auto place-self-center lg:col-span-5">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-6xl xl:text-6xl text-zinc-200">The Knowledge Graph (2023)</h1>
-            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-xl lg:text-3xl text-zinc-300">
-              One mindmap containing <span class="font-bold">the wisdom</span> of leading software engineering practitioners. Learn their <span class="font-bold">mental models</span> and <span class="font-bold">industry best practices.</span>
-            </p>
-            <div class="flex flex-row">
-              <a href="demo.html" target="_blank" class="inline-flex items-center mr-5 focus:ring-4 text-zinc-200 hover:text-white border border-zinc-200 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:border-blue-800 dark:text-zinc-200 dark:hover:bg-blue-800 dark:focus:ring-blue-800 plausible-event-name=Demo">
-                Demo
-              </a>
-              <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="inline-flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 plausible-event-name=Buy+Now+(top)">
-                <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
-                Buy now
-              </button>
-            </div>
+      <div class="mr-auto place-self-center lg:col-span-5">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-6xl xl:text-6xl text-zinc-200">
+          The Knowledge Graph (2023)</h1>
+        <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-xl lg:text-3xl text-zinc-300">
+          One mindmap containing <span class="font-bold">the wisdom</span> of leading software engineering
+          practitioners. Learn their <span class="font-bold">mental models</span> and <span class="font-bold">industry
+            best practices.</span>
+        </p>
+        <div class="flex flex-row">
+          <a href="demo.html" target="_blank"
+            class="inline-flex items-center mr-5 focus:ring-4 text-zinc-200 hover:text-white border border-zinc-200 hover:bg-blue-800 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:border-blue-800 dark:text-zinc-200 dark:hover:bg-blue-800 dark:focus:ring-blue-800 plausible-event-name=Demo">
+            Demo
+          </a>
+          <button data-modal-target="currency-modal" data-modal-toggle="currency-modal"
+            class="inline-flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 plausible-event-name=Buy+Now+(top)">
+            <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+              </path>
+            </svg>
+            Buy now
+          </button>
         </div>
-        <div class="mr-auto place-self-center lg:mt-0 lg:col-span-7 lg:ml-6 sm:ml-0 sm:mt-6 lg:flex border-8 border-zinc-700 border-opacity-50 shadow-2xl">
-            <!-- <img src="./images/tkg_demo.gif" loading="lazy" alt="the knowledge graph animated demo"> -->
-            <video loop muted playsinline class="w-full h-full" id="tkg_demo_video">
-              <source src="./images/tkg_demo_video.mp4" type="video/mp4">
-            </video>
-        </div>                
+      </div>
+      <div
+        class="mr-auto place-self-center lg:mt-0 lg:col-span-7 lg:ml-6 sm:ml-0 sm:mt-6 lg:flex border-8 border-zinc-700 border-opacity-50 shadow-2xl">
+        <!-- <img src="./images/tkg_demo.gif" loading="lazy" alt="the knowledge graph animated demo"> -->
+        <video loop muted playsinline class="w-full h-full" id="tkg_demo_video">
+          <source src="./images/tkg_demo_video.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
 
-    <div id="currency-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+    <div id="currency-modal" tabindex="-1"
+      class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
       <div class="relative w-full h-full max-w-md md:h-auto">
-          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800" data-modal-hide="currency-modal">
-                  <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-              </button>
-              <div class="p-6 text-center">
-                  <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  <h3 class="mb-5 text-lg font-normal text-gray-500">Please select your preferred currency:</h3>
-                  <a href="https://sowl.co/KZZZP" data-modal-hide="currency-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                    USD
-                  </a>
-                  <a href="https://sowl.co/2uv7A" data-modal-hide="currency-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                    EUR
-                  </a>
-              </div>
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button type="button"
+            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800"
+            data-modal-hide="currency-modal">
+            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="p-6 text-center">
+            <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="mb-5 text-lg font-normal text-gray-500">Please select your preferred currency:</h3>
+            <a href="https://sowl.co/KZZZP" data-modal-hide="currency-modal" type="button"
+              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+              USD
+            </a>
+            <a href="https://sowl.co/2uv7A" data-modal-hide="currency-modal" type="button"
+              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+              EUR
+            </a>
           </div>
+        </div>
       </div>
     </div>
   </section>
@@ -107,54 +158,95 @@
       <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
         <div class="sm:text-lg mb-4 lg:flex">
           <!-- EXAMPLE -->
-          <a href="https://youtu.be/2xM3PjaOTNE" target="_blank" class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700 plausible-event-name=Summary+Demo">
+          <a href="https://youtu.be/2xM3PjaOTNE" target="_blank"
+            class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700 plausible-event-name=Summary+Demo">
             <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-l text-sm italic tracking-tight text-gray-500">(Summary Example)</h5>
-                <h5 class="mb-2 text-l font-bold tracking-tight text-gray-200">What every software architect must know</h5>
-                <p class="mb-3 font-normal text-base text-gray-400">Are you aspiring to become a software architect or work at that level?</p>
-                <ol class="mb-3 font-normal text-sm text-gray-400 space-y-3 list-decimal list-inside">
-                  <li>Learn your Enterprise Integration Patterns [...]</li>
-                  <li>You can't avoid the cloud! Familiarize yourself with the services offered by providers and, more importantly, learn how to use them effectively [...]</li>
-                  <li>You need to be able to think in systems [...]</li>
-                  <li>[...] Refine your communication techniques and learn how to manage through influence, not authority</li>
-                  <li>Your work now extends beyond a small team and can have a far-reaching impact on entire organisations [...]</li>
-                </ol>
+              <h5 class="mb-2 text-l text-sm italic tracking-tight text-gray-500">(Summary Example)</h5>
+              <h5 class="mb-2 text-l font-bold tracking-tight text-gray-200">What every software architect must know
+              </h5>
+              <p class="mb-3 font-normal text-base text-gray-400">Are you aspiring to become a software architect or
+                work at that level?</p>
+              <ol class="mb-3 font-normal text-sm text-gray-400 space-y-3 list-decimal list-inside">
+                <li>Learn your Enterprise Integration Patterns [...]</li>
+                <li>You can't avoid the cloud! Familiarize yourself with the services offered by providers and, more
+                  importantly, learn how to use them effectively [...]</li>
+                <li>You need to be able to think in systems [...]</li>
+                <li>[...] Refine your communication techniques and learn how to manage through influence, not authority
+                </li>
+                <li>Your work now extends beyond a small team and can have a far-reaching impact on entire organisations
+                  [...]</li>
+              </ol>
             </div>
-            <iframe class="object-cover w-full min-h-full rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://www.youtube.com/embed/2xM3PjaOTNE" height="600" title="What every software architect must know! #softwareengineering #coding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="object-cover w-full min-h-full rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="https://www.youtube.com/embed/2xM3PjaOTNE" height="600"
+              title="What every software architect must know! #softwareengineering #coding" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </a>
         </div>
         <div class="sm:text-lg text-zinc-300">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white">Videos categorized by areas of growth!</h2>
-            <p class="mb-8 font-light lg:text-xl">As software engineers, we have to develop way more skills beyond the technical. This graph will help you see the different areas you need to work on throughout your career.</p>
-            <!-- List -->
-            <ul role="list" class="pt-8 space-y-5 border-t border-zinc-200 my-7 dark:border-zinc-700">
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal leading-tight text-white"><span class="font-black">26 podcast episodes</span> with leading industry practitioners</span>
-                </li>
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal leading-tight text-white">35+ shorts and deep dives</span>
-                </li>
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0 w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal leading-tight text-white"><span class="font-black">Summary & key insights</span> of every short & podcast episode</span>
-                </li>
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal leading-tight text-white">Access to the <span class="font-black">editable mindmap</span></span>
-                </li>
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal leading-tight text-white"><span class="font-black">40+ hours</span> of content</span>
-                </li>
-            </ul>
-            <p class="font-light lg:text-xl">You get perpetual access for this version and a <span class="font-medium">50% discount</span> on the 2024 release!</p>
+          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white">Videos categorized by areas of growth!</h2>
+          <p class="mb-8 font-light lg:text-xl">As software engineers, we have to develop way more skills beyond the
+            technical. This graph will help you see the different areas you need to work on throughout your career.</p>
+          <!-- List -->
+          <ul role="list" class="pt-8 space-y-5 border-t border-zinc-200 my-7 dark:border-zinc-700">
+            <li class="flex space-x-3">
+              <!-- Icon -->
+              <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-base font-normal leading-tight text-white"><span class="font-black">26 podcast
+                  episodes</span> with leading industry practitioners</span>
+            </li>
+            <li class="flex space-x-3">
+              <!-- Icon -->
+              <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-base font-normal leading-tight text-white">35+ shorts and deep dives</span>
+            </li>
+            <li class="flex space-x-3">
+              <!-- Icon -->
+              <svg class="flex-shrink-0 w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-base font-normal leading-tight text-white"><span class="font-black">Summary & key
+                  insights</span> of every short & podcast episode</span>
+            </li>
+            <li class="flex space-x-3">
+              <!-- Icon -->
+              <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-base font-normal leading-tight text-white">Access to the <span
+                  class="font-black">editable mindmap</span></span>
+            </li>
+            <li class="flex space-x-3">
+              <!-- Icon -->
+              <svg class="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-base font-normal leading-tight text-white"><span class="font-black">40+ hours</span> of
+                content</span>
+            </li>
+          </ul>
+          <p class="font-light lg:text-xl">You get perpetual access for this version and a <span class="font-medium">50%
+              discount</span> on the 2024 release!</p>
         </div>
       </div>
     </div>
@@ -166,12 +258,23 @@
       <div class="items-center lg:grid lg:grid-cols-2 gap-8 xl:gap-16">
         <div>
           <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white">Who is this for?</h2>
-          <p class="mb-8 font-light lg:text-xl text-zinc-300"><span class="font-bold">Junior, mid or senior+ software engineers</span>, early career engineering managers and pretty much anyone interested in Software Engineering!</p>
-          <p class="mb-8 font-light lg:text-xl text-zinc-300">This is a great resource for anyone who wants to <span class="font-bold">learn more about good software engineering practices</span> and how to become a better engineer.</p>
-          <p class="mb-8 font-light lg:text-xl text-zinc-300">This could also be the perfect <span class="font-bold">learning and development purchase for your tech team.</span> You could incorporate the short videos into your onboarding process or allow your engineers to go through the content at their pace!</p>
+          <p class="mb-8 font-light lg:text-xl text-zinc-300"><span class="font-bold">Junior, mid or senior+ software
+              engineers</span>, early career engineering managers and pretty much anyone interested in Software
+            Engineering!</p>
+          <p class="mb-8 font-light lg:text-xl text-zinc-300">This is a great resource for anyone who wants to <span
+              class="font-bold">learn more about good software engineering practices</span> and how to become a better
+            engineer.</p>
+          <p class="mb-8 font-light lg:text-xl text-zinc-300">This could also be the perfect <span
+              class="font-bold">learning and development purchase for your tech team.</span> You could incorporate the
+            short videos into your onboarding process or allow your engineers to go through the content at their pace!
+          </p>
         </div>
         <div>
-          <iframe class="shadow-xl mx-auto border-8 border-zinc-700 border-opacity-50" height="650px" src="https://www.youtube.com/embed/ggMgdLbnpEM" title="The knowledge graph for software engineers #softwareengineering #programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="shadow-xl mx-auto border-8 border-zinc-700 border-opacity-50" height="650px"
+            src="https://www.youtube.com/embed/ggMgdLbnpEM"
+            title="The knowledge graph for software engineers #softwareengineering #programming" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -179,13 +282,16 @@
 
   <section class="bg-gray-800">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
-        <div class="max-w-screen-sm mx-auto text-center">
-            <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-white">Grab yourself a copy or gift it to someone!</h2>
-            <p class="mb-6 font-medium text-gray-400 md:text-lg">The lite version is available for free <a class="underline" href="https://glich.stream/tkg_sample">here</a></p>
-            <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-5 mb-5 plausible-event-name=Buy+Now+(bottom)">
-              Buy now
-            </button>
-        </div>
+      <div class="max-w-screen-sm mx-auto text-center">
+        <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-white">Grab yourself a copy or gift it
+          to someone!</h2>
+        <p class="mb-6 font-medium text-gray-400 md:text-lg">The lite version is available for free <a class="underline"
+            href="https://glich.stream/tkg_sample">here</a></p>
+        <button data-modal-target="currency-modal" data-modal-toggle="currency-modal"
+          class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-5 mb-5 plausible-event-name=Buy+Now+(bottom)">
+          Buy now
+        </button>
+      </div>
     </div>
   </section>
 
@@ -193,67 +299,120 @@
   <section class="bg-gray-900">
     <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
       <h2 class="col-span-12 mb-4 text-3xl font-extrabold tracking-tight text-white">FAQs</h2>
-      <div id="accordion-flush" class="col-span-12" data-accordion="collapse" data-active-classes="bg-gray-800" data-inactive-classes="text-gray-300">
+      <div id="accordion-flush" class="col-span-12" data-accordion="collapse" data-active-classes="bg-gray-800"
+        data-inactive-classes="text-gray-300">
         <h2 id="accordion-flush-heading-1">
-          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+          <button type="button"
+            class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700"
+            data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
             <span class="text-gray-300 text-lg">Why would I buy this? Your content is already accessible for free</span>
-            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
           </button>
         </h2>
         <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
           <div class="px-3 py-5 font-light border-b border-gray-700">
-            <p class="mb-2 font-normal text-gray-300">My primary objective is to help you level up your tech career by making my content accessible to everyone for free. However, my content is scattered across multiple platforms such as TikTok and YouTube. To make it easier for you to access and benefit from this material, I have categorized and labeled it, and made it available from one centralized location. If you haven't been following me from the beginning, my content graph will be a valuable tool to help you navigate the videos in a more structured approach, ensuring that you get the maximum value from them.</p>
+            <p class="mb-2 font-normal text-gray-300">My primary objective is to help you level up your tech career by
+              making my content accessible to everyone for free. However, my content is scattered across multiple
+              platforms such as TikTok and YouTube. To make it easier for you to access and benefit from this material,
+              I have categorized and labeled it, and made it available from one centralized location. If you haven't
+              been following me from the beginning, my content graph will be a valuable tool to help you navigate the
+              videos in a more structured approach, ensuring that you get the maximum value from them.</p>
           </div>
         </div>
         <h2 id="accordion-flush-heading-2">
-          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+          <button type="button"
+            class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700"
+            data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+            aria-controls="accordion-flush-body-2">
             <span class="text-gray-300 text-lg">How am I supposed to use this mindmap?</span>
-            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="white" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
           </button>
         </h2>
         <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
           <div class="px-3 py-5 font-light border-b border-gray-700">
-            <p class="mb-2 font-normal text-gray-300 text-lg">When you make a purchase, you will receive 2 links: one for the online version of the mindmap (accessible from any browser / device) and one for the editable xmind file. Here are some ideas for how you can use them:</p>
+            <p class="mb-2 font-normal text-gray-300 text-lg">When you make a purchase, you will receive 2 links: one
+              for the online version of the mindmap (accessible from any browser / device) and one for the editable
+              xmind file. Here are some ideas for how you can use them:</p>
             <ul class="list-disc list-inside text-gray-300 font-normal">
               <li>Bookmark the web version & pick a short video to watch whenever you have some free time!</li>
               <li>Make a list of the topics you'd like to develop in & build a study plan</li>
-              <li>Use the xmind file to create your own mindmap, restructure it to your liking & add supplementary material</li>
+              <li>Use the xmind file to create your own mindmap, restructure it to your liking & add supplementary
+                material</li>
               <li>Go through the summary of each video & episode to evaluate its relevance to you before you dig in</li>
             </ul>
           </div>
         </div>
         <h2 id="accordion-flush-heading-3">
-          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+          <button type="button"
+            class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700"
+            data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+            aria-controls="accordion-flush-body-3">
             <span class="text-gray-100">I want to learn but I cannot afford this!</span>
-            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="white" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
           </button>
         </h2>
         <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
           <div class="px-3 py-5 font-light border-b border-gray-700">
-            <p class="mb-2 font-normal text-gray-300">I'm true to my goal and my priority is to provide as many people access as possible. I'm willing to offer up to 80% discount for folks who cannot afford it and students.</p>
-            <p class="mb-2 font-normal text-gray-300">Email me at <span class="font-mono bg-slate-600">contact [at] interop [dot] link</span> and we'll make sure you get the access you need!</p>
+            <p class="mb-2 font-normal text-gray-300">I'm true to my goal and my priority is to provide as many people
+              access as possible. I'm willing to offer up to 80% discount for folks who cannot afford it and students.
+            </p>
+            <p class="mb-2 font-normal text-gray-300">Email me at <span class="font-mono bg-slate-600">contact [at]
+                interop [dot] link</span> and we'll make sure you get the access you need!</p>
           </div>
         </div>
         <h2 id="accordion-flush-heading-4">
-          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
+          <button type="button"
+            class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700"
+            data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
             <span class="text-gray-300 text-lg">I found a mistake in your content!</span>
-            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
           </button>
         </h2>
         <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
           <div class="px-3 py-5 font-light border-b border-gray-700">
-            <p class="mb-2 font-normal text-gray-300">Oops.. I apologise in advance for that, please email me at <span class="font-mono bg-slate-600">contact [at] interop [dot] link</span> and you'll have my undenying gratitude 😄</p>
+            <p class="mb-2 font-normal text-gray-300">Oops.. I apologise in advance for that, please email me at <span
+                class="font-mono bg-slate-600">contact [at] interop [dot] link</span> and you'll have my undenying
+              gratitude 😄</p>
           </div>
         </div>
         <h2 id="accordion-flush-heading-5">
-          <button type="button" class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700" data-accordion-target="#accordion-flush-body-5" aria-expanded="true" aria-controls="accordion-flush-body-5">
+          <button type="button"
+            class="flex items-center justify-between w-full px-3 py-5 font-medium text-left text-gray-100 border-b border-gray-700"
+            data-accordion-target="#accordion-flush-body-5" aria-expanded="true" aria-controls="accordion-flush-body-5">
             <span class="text-gray-300 text-lg">I want to put in a large order, how can I do that?</span>
-            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="white" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
           </button>
         </h2>
         <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
           <div class="px-3 py-5 font-light border-b border-gray-700">
-            <p class="mb-2 font-normal text-gray-300">Sounds wonderful! Reach out to me via <span class="font-mono bg-slate-600">letsworktogether [at] interop [dot] link</span> and I'll be more than happy to help you out!</p>
+            <p class="mb-2 font-normal text-gray-300">Sounds wonderful! Reach out to me via <span
+                class="font-mono bg-slate-600">letsworktogether [at] interop [dot] link</span> and I'll be more than
+              happy to help you out!</p>
           </div>
         </div>
       </div>
@@ -263,36 +422,52 @@
   <!-- FOOTER -->
   <footer class="p-4 bg-gray-900">
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="https://interop.link" class="hover:underline">Interop Services</a>. All Rights Reserved.
-        </span>
-        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="https://www.facebook.com/BassemDy/" class="text-gray-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                <span class="sr-only">Facebook page</span>
-            </a>
-            <a href="https://www.linkedin.com/in/bassemdghaidy/" class="text-gray-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <span class="sr-only">LinkedIn page</span>
-            </a>
-            <a href="https://twitter.com/BassemDy" class="text-gray-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                <span class="sr-only">Twitter page</span>
-            </a>
-            <a href="https://github.com/link-" class="text-gray-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-                <span class="sr-only">GitHub account</span>
-            </a>
-            <a href="https://glich.stream" class="text-gray-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg>
-                <span class="sr-only">Youtube page</span>
-            </a>
-        </div>
+      <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="https://interop.link"
+          class="hover:underline">Interop Services</a>. All Rights Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a href="https://www.facebook.com/BassemDy/" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd" /></svg>
+          <span class="sr-only">Facebook page</span>
+        </a>
+        <a href="https://www.linkedin.com/in/bassemdghaidy/" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          <span class="sr-only">LinkedIn page</span>
+        </a>
+        <a href="https://twitter.com/BassemDy" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          <span class="sr-only">Twitter page</span>
+        </a>
+        <a href="https://github.com/link-" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+              clip-rule="evenodd" /></svg>
+          <span class="sr-only">GitHub account</span>
+        </a>
+        <a href="https://glich.stream" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" />
+            </svg>
+          <span class="sr-only">Youtube page</span>
+        </a>
+      </div>
     </div>
   </footer>
 
   <!-- Controls -->
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       // Prevent the video from blocking the page load until it's ready
       const video = document.getElementById('tkg_demo_video');
       video.play();
@@ -300,4 +475,5 @@
   </script>
 
 </body>
+
 </html>

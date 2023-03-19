@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- HTML Meta Tags -->
   <title>The Knowledge Graph (2023)</title>
-  <meta name="description" content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
+  <meta name="description"
+    content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
   <meta name="google-site-verification" content="OSr07Pxc-O2Wo4qK6MjuiPDX6YlUARoeIUj2TMxvV5o" />
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://glich.stream/tkg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Knowledge Graph (2023)">
-  <meta property="og:description" content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
+  <meta property="og:description"
+    content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
   <meta property="og:image" content="https://glich.stream/tkg/images/thumbnail_1280x720.png">
 
   <!-- Twitter Meta Tags -->
@@ -21,7 +24,8 @@
   <meta property="twitter:domain" content="glich.stream">
   <meta property="twitter:url" content="https://glich.stream/tkg">
   <meta name="twitter:title" content="The Knowledge Graph (2023)">
-  <meta name="twitter:description" content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
+  <meta name="twitter:description"
+    content="One mindmap containing the wisdom of leading software engineering practitioners. Learn their mental models and industry best practices. The Knowledge Graph is the best reference for all software engineers and engineering leaders.">
   <meta name="twitter:image" content="https://glich.stream/tkg/images/thumbnail_1280x720.png">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
@@ -40,56 +44,130 @@
   <!-- GDPR compliant, tracking free analytics -->
   <script defer data-domain="glich.stream" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
+
 <body class="bg-zinc-900">
-    <section>
-        <!-- CURRENCY MODAL -->
-        <div id="currency-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-            <div class="relative w-full h-full max-w-md md:h-auto">
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800" data-modal-hide="currency-modal">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                    <div class="p-6 text-center">
-                        <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <h3 class="mb-5 text-lg font-normal text-gray-500">Please select your preferred currency:</h3>
-                        <a href="https://sowl.co/KZZZP" data-modal-hide="currency-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                            USD
-                        </a>
-                        <a href="https://sowl.co/2uv7A" data-modal-hide="currency-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                            EUR
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <section>
+    <!-- CURRENCY MODAL -->
+    <div id="currency-modal" tabindex="-1"
+      class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+      <div class="relative w-full h-full max-w-md md:h-auto">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button type="button"
+            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800"
+            data-modal-hide="currency-modal">
+            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="p-6 text-center">
+            <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="mb-5 text-lg font-normal text-gray-500">Please select your preferred currency:</h3>
+            <a href="https://sowl.co/KZZZP" data-modal-hide="currency-modal" type="button"
+              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+              USD
+            </a>
+            <a href="https://sowl.co/2uv7A" data-modal-hide="currency-modal" type="button"
+              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+              EUR
+            </a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- DISCOUNT -->
-        <div id="discount_alert_box" class="flex p-4 mb-2 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
-            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-full py-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-            <span class="sr-only">Info</span>
-            <div class="ml-3 text-sm font-medium">
-                Use the code: <span class="font-mono font-bold text-blue-700">KNOWL3DGEUSD</span> on checkout for a 30% discount and <span class="font-mono font-bold text-blue-700">KNOWL3DGEEUR</span> if you're paying in EURO.
-                <button data-modal-target="currency-modal" data-modal-toggle="currency-modal" class="inline-flex ml-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 plausible-event-name=Buy+Now+(demo)">
-                    <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
-                    Buy now
-                </button>
-            </div>
-        </div>
+    <!-- DISCOUNT -->
+    <div id="discount_alert_box"
+      class="flex p-4 mb-2 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+      <svg aria-hidden="true" class="flex-shrink-0 w-5 h-full py-4" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <span class="sr-only">Info</span>
+      <div class="ml-3 text-sm font-medium">
+        Use the code: <span class="font-mono font-bold text-blue-700">KNOWL3DGEUSD</span> on checkout for a 30% discount
+        and <span class="font-mono font-bold text-blue-700">KNOWL3DGEEUR</span> if you're paying in EURO.
+        <button data-modal-target="currency-modal" data-modal-toggle="currency-modal"
+          class="inline-flex ml-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 plausible-event-name=Buy+Now+(demo)">
+          <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+            </path>
+          </svg>
+          Buy now
+        </button>
+      </div>
+    </div>
 
-        <!-- MAP SIZE -->
-        <!-- <div class="bg-red-50 border border-red-400 text-red-700 px-4 py-3 mb-2 mt-0 rounded relative" role="alert">
-            <span class="block sm:inline">The map is 20MB in size, it takes a while to load depending on the speed of your internet connection</span>
-            <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-              <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
-            </span>
-          </div> -->
+    <div class="flex items-center bg-blue-500 text-white text-sm font-bold px-4 py-3 mb-2" role="alert">
+      <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path
+          d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z" />
+      </svg>
+      <p>The map is 20MB in size, it might take a while to load (depending on the speed of your internet connection).
+      </p>
+    </div>
 
-        <div class="flex items-center bg-blue-500 text-white text-sm font-bold px-4 py-3 mb-2" role="alert">
-            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-            <p>The map is 20MB in size, it might take a while to load (depending on the speed of your internet connection).</p>
-        </div>
+    <iframe src='https://www.xmind.app/embed/8RPkn9/' class="h-[90vh] w-screen" frameborder='0' scrolling='no'
+      allowfullscreen="true"></iframe>
+  </section>
 
-        <iframe src='https://www.xmind.app/embed/8RPkn9/' class="h-[90vh] w-screen" frameborder='0' scrolling='no' allowfullscreen="true"></iframe>
-    </section>
+  <!-- FOOTER -->
+  <footer class="p-4 bg-gray-900">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="https://interop.link"
+          class="hover:underline">Interop Services</a>. All Rights Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a href="https://www.facebook.com/BassemDy/" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="sr-only">Facebook page</span>
+        </a>
+        <a href="https://www.linkedin.com/in/bassemdghaidy/" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+          <span class="sr-only">LinkedIn page</span>
+        </a>
+        <a href="https://twitter.com/BassemDy" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+          <span class="sr-only">Twitter page</span>
+        </a>
+        <a href="https://github.com/link-" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="sr-only">GitHub account</span>
+        </a>
+        <a href="https://glich.stream" class="text-gray-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" />
+          </svg>
+          <span class="sr-only">Youtube page</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
